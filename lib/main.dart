@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:github_client_app/common/global.dart';
+import 'package:github_client_app/l10n/gm_localization.dart';
 import 'package:github_client_app/routes/home.dart';
 import 'package:github_client_app/routes/language.dart';
 import 'package:github_client_app/routes/login.dart';
@@ -26,9 +28,14 @@ class MyApp extends StatelessWidget {
         child: Consumer2<ThemeModel, LocalModel>(
           builder: (context, themeModel, localModel, child) {
             return MaterialApp(
-              // theme: ThemeData(primarySwatch: themeModel.tehme),
+              theme: ThemeData(primaryColor: themeModel.theme),
               home: const HomeRoute(),
               locale: localModel.getLocale(),
+              localizationsDelegates: [
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GmlocalizationsDelegate()
+              ],
               onGenerateTitle: (context) {
                 return 'title';
               },

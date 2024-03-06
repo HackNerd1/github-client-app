@@ -1,0 +1,53 @@
+{
+  "@@last_modified": "2024-03-06T14:28:15.407736",
+  "title": "Github 应用",
+  "@title": {
+    "description": "Title for the demo application",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "language": "语言",
+  "@language": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "theme": "主题",
+  "@theme": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "login": "登录",
+  "@login": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "username": "用户名",
+  "@username": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "passowrd": "密码",
+  "@passowrd": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "remainingEmailsMessage": "{howMany,plural, =0{There are no emails left}=1{There is {howMany} email left}other{There are {howMany} emails left}}",
+  "@remainingEmailsMessage": {
+    "description": "How many emails remain after archiving.",
+    "type": "text",
+    "placeholders_order": [
+      "howMany"
+    ],
+    "placeholders": {
+      "howMany": {
+        "example": 42
+      }
+    }
+  }
+}

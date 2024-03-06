@@ -1,0 +1,83 @@
+{
+  "@@last_modified": "2024-03-06T14:44:40.661352",
+  "title": "Github App",
+  "@title": {
+    "description": "Title for the demo application",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "language": "Language",
+  "@language": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "theme": "Theme",
+  "@theme": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "login": "Login",
+  "@login": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "username": "Username",
+  "@username": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "usernamePlaceholder": "please input username",
+  "@usernamePlaceholder": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "passowrd": "Passowrd",
+  "@passowrd": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "passwordPlaceholder": "please input password",
+  "@passwordPlaceholder": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "logout": "Logout",
+  "@logout": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "confrim": "Confrim",
+  "@confrim": {
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "remainingEmailsMessage": "{howMany,plural, =0{There are no emails left}=1{There is {howMany} email left}other{There are {howMany} emails left}}",
+  "@remainingEmailsMessage": {
+    "description": "How many emails remain after archiving.",
+    "type": "text",
+    "placeholders_order": [
+      "howMany"
+    ],
+    "placeholders": {
+      "howMany": {
+        "example": 42
+      }
+    }
+  }
+}

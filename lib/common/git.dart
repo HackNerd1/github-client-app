@@ -38,8 +38,8 @@ class Git {
 
   // 登录
   Future<User> login(String login, String pwd) async {
-    String basic = 'Basic ${base64.encode(utf8.encode("$login:$pwd"))}';
-
+    String basic = 'Basic ' + base64.encode(utf8.encode('$login:$pwd'));
+    print("================ basic ${basic}");
     var response = await dio.get("/user",
         options: _options.copyWith(
             headers: {HttpHeaders.authorizationHeader: basic},

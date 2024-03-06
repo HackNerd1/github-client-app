@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:github_client_app/common/git.dart';
+import 'package:github_client_app/l10n/gm_localization.dart';
 import 'package:github_client_app/models/index.dart';
 import 'package:github_client_app/states/user_model.dart';
 import 'package:github_client_app/widgets/my_drawer.dart';
@@ -25,7 +26,8 @@ class _HomeRouteState extends State<HomeRoute> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Github 客户端"),
+        backgroundColor: Theme.of(context).primaryColor,
+        title: Text(Gmlocalizations.of(context).title),
       ),
       drawer: const MyDrawer(),
       body: _buildBody(),
@@ -38,8 +40,10 @@ class _HomeRouteState extends State<HomeRoute> {
     if (!userModel.isLogin) {
       return Center(
         child: ElevatedButton(
-          child: const Text("login"),
-          onPressed: () {},
+          child: Text(Gmlocalizations.of(context).login),
+          onPressed: () {
+            Navigator.of(context).pushNamed("login");
+          },
         ),
       );
     } else {
